@@ -8,3 +8,5 @@ Criar um site responsivo, voltado para a visualização de receitas culinárias,
 Definir a estrutura do site na sintaxe HTML;
 Utilizar folhas de estilo (CSS) na formatação das páginas;
 Utilizar elementos básicos de formatação com o framework Bootstrap.
+
+Link para a visualização do projeto: https://emilyrizo.github.io/Missao-Pratica-N1-Semestre-2/
