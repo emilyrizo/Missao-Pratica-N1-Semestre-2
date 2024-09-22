@@ -1,6 +1,4 @@
 # Missao-Pratica-N1-Semestre-2
-"Meu primeiro site 'cringe'"
-
 Projeto final do Nível 1 do Segundo Semestre do curso Desenvolvimento Full Stack da Universidade Estácio de Sá
 
 Implementação de um site voltado para o fornecimento de receitas culinárias, com a utilização apenas de HTML e CSS.
