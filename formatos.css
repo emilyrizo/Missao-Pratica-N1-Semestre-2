@@ -101,7 +101,6 @@
   }
 }
 
-
 /* _________ Home __________ */
 
 
@@ -118,7 +117,7 @@
 
 #container-main {
   height: auto;
-  min-height: 83vh;
+  min-height: 88vh;
 }
 
 .title-site-media {
@@ -169,6 +168,11 @@
   .descricao {
     font-size: 2rem;
   }
+
+  #container-main {
+    height: auto;
+    min-height: 90vh;
+  }
 }
 
 @media (max-width: 425px) {
@@ -181,6 +185,8 @@
     font-size: 9rem;
     line-height: 7rem;
   }
+
+
 }
 
 /* _________ Receitas __________ */
