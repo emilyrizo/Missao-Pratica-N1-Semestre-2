@@ -1,0 +1,446 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Satoshi", "sans-serif";
+  font-size: 1.6rem;
+}
+
+
+/* _________ Fontes __________ */
+
+
+@font-face {
+  font-family: "Satoshi";
+  src: url('./fonts/Satoshi-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nocturnal-ExtraLight";
+  src: url('./fonts/Nocturnal-ExtraLight-iF6683b52334e06.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Nocturnal";
+  src: url('./fonts/Nocturnal-Regular-iF6683b5235b3aa.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Perfectbomber";
+  src: url('./fonts/perfectbomberfreepersonalusesc-pvqmd.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* _________ Nav __________ */
+
+
+.container-nav {
+  background-color: #fff8f2 !important;
+  box-shadow: 0 .3rem .5rem -0.2rem hsla(0, 0%, 47%, 0.8);
+  list-style: none;
+}
+
+.nav-logo {
+  height: 5rem;
+  margin: 0 3.5rem .6rem 0;
+  padding-left: 4rem;
+}
+
+.navbar-item {
+  display: flex !important;
+  margin-right: 2.5rem !important;
+}
+
+.navbar-link {
+  margin: auto;
+  height: 4rem;
+  font-family: "Nocturnal";
+  font-size: 2.5rem !important;
+  line-height: 3rem;
+  display: flex !important;
+  color: #574139 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: transform 0.25s ease !important;
+}
+
+.navbar-link:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .nav-logo {
+    padding-left: 0.5rem;
+  }
+
+  .navbar-toggler {
+    margin: 1rem;
+    border: none !important;
+  }
+
+  .navbar-toggler-icon {
+    width: 2.6rem !important;
+  }
+
+  .navbar-link {
+    padding-bottom: 3rem !important;
+  }
+}
+
+
+/* _________ Home __________ */
+
+
+#background {
+  background-image: url(./imagens/bg-site2.png);
+  background-color: #fbf7f4;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 75vh;
+  position: relative;
+  margin: 0 auto;
+}
+
+#container-main {
+  height: auto;
+  min-height: 83vh;
+}
+
+.title-site-media {
+  font-family: "Perfectbomber";
+  font-size: 12rem;
+  letter-spacing: .2rem;
+  line-height: 10rem;
+  text-align: center;
+  padding: 8rem 3rem 0;
+  color: #574139 !important;
+  margin-bottom: 2.5rem;
+  display: none;
+}
+
+.title-site {
+  font-family: "Perfectbomber";
+  font-size: 12rem;
+  letter-spacing: .2rem;
+  line-height: 10rem;
+  text-align: center;
+  padding: 8rem 3rem 0;
+  color: #574139 !important;
+  margin-bottom: 2.5rem;
+}
+
+.descricao {
+  margin: 0 auto;
+  max-width: 70rem;
+  font-family: "Nocturnal";
+  font-size: 2.5rem;
+  letter-spacing: .1rem;
+  text-align: center;
+  color: #574139 !important;
+  margin-bottom: 0;
+  padding: 0rem 3rem;
+}
+
+@media (max-width: 768px) {
+  #container-main {
+    height: auto;
+    min-height: 1vh;
+  }
+
+  .title-site {
+    font-size: 9rem;
+    line-height: 7rem;
+  }
+  .descricao {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .title-site {
+    display: none;
+  }
+
+  .title-site-media {
+    display: block;
+    font-size: 9rem;
+    line-height: 7rem;
+  }
+}
+
+/* _________ Receitas __________ */
+
+
+.container-receitas {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto ;
+  gap: 3.5rem; 
+  padding: 0;
+  margin: 3.5rem auto;
+}
+
+.conteudo-receita {
+  padding: 3rem 3rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #d4dbbc;
+  border-radius: 1rem;
+  box-shadow: .4rem .3rem .7rem hsla(0, 0%, 47%, 0.8);
+  height: 100%;
+  color: #574139;
+}
+
+.conteudo-receita h2 {
+  text-align: center;
+  font-family: "Perfectbomber";
+  font-size: 5rem;
+  letter-spacing: .1rem;
+  padding-bottom: 1.5rem;
+}
+
+.conteudo-receita p {
+  font-family: "Nocturnal";
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.img-receita {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.lista-ingredientes, .lista-preparo {
+  padding-left: 3rem;
+}
+
+.lista-ingredientes li {
+  font-family: "Nocturnal-ExtraLight";
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+
+.lista-preparo li {
+  font-family: "Nocturnal-ExtraLight";
+  font-size: 2.2rem;
+  line-height: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+
+@media (max-width: 1024px) {
+  .container-receitas {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container-receitas {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    display: grid;
+    grid-template-rows: auto ;
+    gap: 5rem; 
+    padding: 0;
+    margin: 3rem auto;
+  }
+}
+
+@media (max-width: 425px) {
+  .container-receitas {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+  .conteudo-receita h2 {
+    line-height: 4rem;
+  }
+  .lista-ingredientes, .lista-preparo {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .conteudo-receita h2 {
+    font-size: 4rem;
+  }
+  
+  .conteudo-receita p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .lista-ingredientes li, .lista-preparo li  {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+}
+
+
+/* _________ Cadastro __________ */
+
+
+.container-cadastro {
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.cadastro {
+  background-color: hsla(16, 21%, 28%, 0.75);
+  border-radius: 1rem;
+  width: 55%;
+  padding: 1.5rem 3rem 3.5rem 3rem;
+  margin-top: 4rem !important;
+  margin-bottom: 4rem;
+  box-shadow: .4rem .3rem .4rem hsla(0, 0%, 47%, 0.8);
+}
+
+.cadastro label {
+  font-family: "Nocturnal";
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  letter-spacing: .08rem;
+  color: #c8ceb2;
+}
+
+.cadastro input {
+  font-family: "Nocturnal-ExtraLight";
+  font-size: 2rem !important;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
+
+.cadastro input:focus {
+  font-family: "Nocturnal-ExtraLight";
+  font-size: 2rem;
+  line-height: 2rem;
+  border: #574139;
+  box-shadow: .4rem .3rem .4rem hsla(16, 21%, 28%, 0.505);
+}
+
+.cadastro input::placeholder {
+  font-family: "Nocturnal-ExtraLight";
+  font-size: 2rem;
+  line-height: 2rem;
+  color: #c3b1aa;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-family: "Nocturnal" !important;
+  font-size: 2rem !important;
+  letter-spacing: .07rem;
+  line-height: 2.5rem !important;
+  color: #574139 !important;
+  margin-top: 2rem;
+  background-color: #c8ceb2 !important;
+  padding: .7rem 2.5rem !important;
+  border-radius: 1rem !important;
+  box-shadow: .4rem .4rem .25rem hsla(16, 21%, 28%, 0.505);
+  transition: transform 0.2s ease !important;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 1024px) {
+  .cadastro {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cadastro {
+    width: 80%;
+  }
+
+  .conteudo-receita p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .lista-ingredientes li, .lista-preparo li  {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .cadastro div {
+    padding-bottom: .05rem;
+  }
+
+  .cadastro {
+    width: 85%;
+    margin-top: 2.5rem !important;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+  }
+
+  .cadastro label {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .cadastro input, .cadastro input:focus, .cadastro input::placeholder  {
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.9rem !important;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .cadastro {
+    width: 90%;
+  }
+}
+
+/* _________ Footer __________ */
+
+
+.footer-div {
+  box-shadow: inset 0 .3rem .5rem -0.2rem hsla(0, 0%, 47%, 0.8);
+  background-color: #c8ceb2;
+  color: #574139;
+  text-align: left;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 1.4rem !;
+}
+
+@media (max-width: 425px) {
+  .copyright {
+    font-size: 1.3rem;
+  }
+}
