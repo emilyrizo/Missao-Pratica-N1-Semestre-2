@@ -77,25 +77,24 @@
   transform: scale(1.1);
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .nav-logo {
     padding-left: 0.5rem;
   }
-
+  
   .navbar-toggler {
     margin: 1rem;
     border: none !important;
   }
-
+  
   .navbar-toggler-icon {
     width: 2.6rem !important;
   }
-
+  
   .navbar-link {
     margin-top: 1.5rem;
   }
-
+  
   .link-cadastro{
    margin-bottom: 2rem;
   }
